@@ -1,0 +1,14 @@
+#list_menu{
+    left: 0;
+}
+#list_menu>button{
+    color: #8f8f8f;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 24px 0 0;
+    background-color: transparent;
+    border: 0;
+}
+#list_menu>button:hover{
+    color: #000;
+}

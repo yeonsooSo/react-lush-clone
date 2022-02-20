@@ -1,0 +1,15 @@
+.list-container{
+    display: flex;
+    justify-content: center;
+}
+
+.list{
+    width: 80%;
+}
+
+
+#title{
+    font-size: 28px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #000;
+}
