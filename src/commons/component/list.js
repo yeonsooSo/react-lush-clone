@@ -1,7 +1,7 @@
 import Litem from "./list_item";
 import Lmenu from "./list_menu";
 import data from '../data/data';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../../assets/list.css";
 
 const setCategory=[...new Set(data.map((e)=>e.category))];
@@ -10,9 +10,12 @@ const numCategory=[data.length,...setCategory.map((cate)=>data.reduce((cnt, data
 let selectCategory="전체";
 
 function List(){
+    const URLSearch = new URLSearchParams(window.location.search);
+    let cate = URLSearch.get("cate");
+    cate = unescape(cate);
     const [items, setItem] = useState(data);
 
-    const filterItem=(cate)=>{
+    useEffect(() => {
         selectCategory=cate;
         if(selectCategory==="전체"){
             setItem(data);
@@ -20,15 +23,16 @@ function List(){
         else{
             setItem(data.filter(item=>item.category === selectCategory));
         }
+    },[]);
 
-
-    }
+// window.location.search
+// useEffect( ,[]);
 
     return(
         <div className="list-container">
             <div className="list">
                 <h1 id="title">{selectCategory}</h1>
-                <Lmenu category={category} num={numCategory} filterItem={filterItem}/>
+                <Lmenu category={category} num={numCategory} />
                 <Litem items={items}/>
             </div>
         </div>
