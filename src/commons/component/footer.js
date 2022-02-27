@@ -11,17 +11,17 @@ function Footer(){
                             <img src="https://lush.co.kr/data/skin/front/howling/img/banner/1bb87d41d15fe27b500a4bfcde01bb0e_24213.png"></img>
                         </Link>
                     </div>
-                    <div className="upper_menu">
-                        <ul>
-                            <li>스카우트</li>
-                            <li>회사소개</li>
-                            <li>개인정보처리방침</li>
-                            <li>영상정보관리지침</li>
-                            <li>이용약관</li>
-                            <li>고객센터</li>
+                </div>
+                <div className="upper_menu">
+                    <ul>
+                        <li>스카우트</li>
+                        <li>회사소개</li>
+                        <li>개인정보처리방침</li>
+                        <li>영상정보관리지침</li>
+                        <li>이용약관</li>
+                        <li>고객센터</li>
 
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
             </div>
             <div className="left_menu">
