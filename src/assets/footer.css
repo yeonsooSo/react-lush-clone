@@ -11,8 +11,6 @@
 .footer_inner {
     align-items: center;
     display: flex;
-    
-
 }
 
 .logo {
@@ -30,7 +28,6 @@
     font-weight: bold;
     position: relative;
     text-align: center;
-
 }
 
 .upper_menu>ul>li {
